@@ -11,7 +11,8 @@ echo "Memory Usage: $MEM%"
 echo "Disk Usage: $DISK%"
 
 if [ "$DISK" -gt 80 ]; then
-    echo "WARNING: Disk usage above 80%"
+     echo "ALERT: Disk usage above $DISK_THRESHOLD%"
+
 else
     echo "Status: OK"
 fi
